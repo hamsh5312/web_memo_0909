@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,9 +21,7 @@
 
 	<div id="wrap">
 		
-		<header class="bg-secondary text-light">
-			<h1 class="ml-3 pt-1">Memo</h1>
-		</header>
+		<c:import url="/WEB-INF/jsp/include/header.jsp" />
 		
 		<section class="content d-flex justify-content-center align-items-center">
 		
@@ -40,9 +39,7 @@
 			
 		</section>
 		
-		<footer class="bg-secondary text-light text-center">
-			Copyright 2018. memo all rights reserved.
-		</footer>
+		<c:import url="/WEB-INF/jsp/include/footer.jsp" />
 		
 		
 	</div>
