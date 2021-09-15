@@ -30,7 +30,24 @@
  		
  	</insert>
  
+	<select id="selectUserByLoginIdPassword" resultType="com.hamsh.memo.user.model.User"
+	parameterType="map">
 	
+		SELECT
+			`id`
+			, `loginId`
+ 			, `password`
+ 			, `name`
+ 			, `email`
+ 			, `createdAt`
+ 			, `updatedAt`
+		FROM
+			`user`
+		WHERE
+			`loginId` = #{loginId}
+			AND `password` = #{password}
+			
+	</select>
  	
  	
  

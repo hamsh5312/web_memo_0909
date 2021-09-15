@@ -94,33 +94,33 @@
 			}
 			
 			
-		});
-		
-		
-		$.ajax({
-			type:"post",
-			url:"/user/sign_up",
-			data:{"loginId":loginId, "password":password, "name":name, "email":email},
-			success:function(data){
-				
-				if(data.result == "success"){
-					location.href="/user/signin_view";
-				}else{
-					alert("회원가입 실패");
+			
+			
+			$.ajax({
+				type:"post",
+				url:"/user/sign_up",
+				data:{"loginId":loginId, "password":password, "name":name, "email":email},
+				success:function(data){
+					
+					
+					if(data.result == "success"){
+						location.href="/user/signin_view";
+					}else{
+						alert("회원가입 실패");
+					}
+					
+				},
+				error:function(e){
+					alert("error");
 				}
 				
-			},
-			error:function(e){
-				alert("error");
-			}
+			});
+			
 			
 		});
 		
 		
-		
-		
-		
-		
+	
 		
 		
 		

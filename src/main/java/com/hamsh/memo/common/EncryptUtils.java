@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException;
 public class EncryptUtils {
 
 	// 암호화 메소드
-	public String md5(String message) {
+	public static String md5(String message) {
 		String encData = "";
 		
 		try {
