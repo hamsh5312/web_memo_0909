@@ -33,7 +33,8 @@
 					<input type="text" class="form-control col-11" id="titleInput">
 				</div>
 				<textarea class="form-control my-3" rows="5" id="contentInput"></textarea>
-				<input type="file">
+				<!-- MIME text/html image/jpeg -->
+				<input type="file" accept="image/*" id="fileInput" multiple>
 				<div class="d-flex justify-content-between my-3">
 					<button type="button" class="btn btn-info">목록으로</button>
 					<button type="button" class="btn btn-success" id="saveBtn">저장</button>
@@ -57,6 +58,7 @@
 				var title = $("#titleInput").val();
 				var content = $("#contentInput").val().trim();
 				
+				
 				if(title == null || title == ""){
 					alert("제목을 입력하세요.");
 					return ;
@@ -67,11 +69,19 @@
 					return ;
 				}
 				
+				var formData = new FormData();
+				formData.append("subject", title);
+				formData.append("content", content);
+				formData.append("file", $("#fileInput")[0].files[0]);
 				
+				// enctype 은  인코딩 타입
 				$.ajax({
+					enctype:"multipart/form-data",   // 파일 업로드 필수
+					processData:false,    //  파일 업로드 필수  
+					contentType:false,    //  파일 업로드 필수 
 					type:"post",
 					url:"/post/create",
-					data:{"subject":title, "content":content },
+					data:formData,
 					success:function(data){
 						if(data.result == "success"){
 							alert("삽입성공");
@@ -79,9 +89,8 @@
 							alert("삽입실패");
 						}
 						
-						
 					},
-					error:fuction(e){
+					error:function(e){
 						alert("error");
 					}
 					

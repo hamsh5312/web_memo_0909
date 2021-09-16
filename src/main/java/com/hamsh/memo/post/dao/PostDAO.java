@@ -9,7 +9,8 @@ public interface PostDAO {
 	public int insertPost(
 			@Param("userId") int userId
 			, @Param("subject") String subject
-			, @Param("content") String content);
+			, @Param("content") String content
+			, @Param("imagePath") String imagePath);
 	
 	
 }

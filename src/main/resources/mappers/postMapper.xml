@@ -21,6 +21,7 @@
  		#{userId}
  		, #{subject}
  		, #{content}
+ 		, #{imagePath}
  		, now()
  		, now()
  		
@@ -28,5 +29,6 @@
  			
  	</insert>
  
+ 	
  
  </mapper>
