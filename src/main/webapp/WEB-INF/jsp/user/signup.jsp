@@ -23,21 +23,19 @@
 <body>
 
 	<div id="wrap">
-		
-		
 		<c:import url="/WEB-INF/jsp/include/header.jsp" />
 		
 		<section class="content d-flex justify-content-center align-items-center">
 		
 			<div class="login-box">
-				<h2 class="text-center">회원가입</h2>
+				<h2 class="text-center mb-3">회원가입</h2>
 				<form id="signupForm">
-					<input type="text" id="loginIdInput" class="form-control" placeholder="아이디를 입력하세요.">
-					<input type="password" id="passwordInput" class="form-control mt-3" placeholder="비밀번호를 입력하세요.">
+					<input type="text" id="loginIdInput" name="loginId" class="form-control" placeholder="아이디를 입력하세요.">
+					<input type="password" id="passwordInput" name="password" class="form-control mt-3" placeholder="비밀번호를 입력하세요.">
 					<input type="password" id="passwordConfirmInput" class="form-control mt-3" placeholder="비밀번호를 다시입력하세요.">
-					<input type="text" id="nameInput" class="form-control mt-3" placeholder="이름">
-					<input type="text" id="emailInput" class="form-control mt-3" placeholder="이메일 주소">
-					<input type="submit" class="btn btn-info btn-block mt-3" value="가입">
+					<input type="text" id="nameInput" name="name" class="form-control mt-3" placeholder="이름">
+					<input type="text" id="emailInput" name="email" class="form-control mt-3" placeholder="이메일 주소">
+					<button type="submit" id="signUpBtn" class="btn btn-info btn-block mt-3">회원가입</button>
 				</form>
 			</div>
 			
@@ -46,6 +44,7 @@
 		<c:import url="/WEB-INF/jsp/include/footer.jsp" />
 		
 	</div>
+
 
 	<script>
 		
@@ -92,23 +91,17 @@
 				alert("이메일을 입력하세요.");
 				return;
 			}
-			
-			
-			
-			
+				
 			$.ajax({
 				type:"post",
 				url:"/user/sign_up",
 				data:{"loginId":loginId, "password":password, "name":name, "email":email},
 				success:function(data){
-					
-					
 					if(data.result == "success"){
 						location.href="/user/signin_view";
 					}else{
 						alert("회원가입 실패");
 					}
-					
 				},
 				error:function(e){
 					alert("error");
@@ -118,10 +111,6 @@
 			
 			
 		});
-		
-		
-	
-		
 		
 		
 		

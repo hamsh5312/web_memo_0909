@@ -1,11 +1,14 @@
 package com.hamsh.memo.post.bo;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.hamsh.memo.common.FileManagerService;
 import com.hamsh.memo.post.dao.PostDAO;
+import com.hamsh.memo.post.model.Post;
 
 @Service
 public class PostBO {
@@ -29,6 +32,29 @@ public class PostBO {
 		
 	}
 	
+	public List<Post> getMemoList(int userId){
+		return postDAO.selectMemoList(userId);
+	}
+	
+	public Post getMemo(int id, int userId) {
+		return postDAO.selectMemo(id, userId);
+	}
+	
+	public int deleteMemo(int id, int userId) {
+		
+		Post post = this.getMemo(id, userId);
+		
+		if(post.getImagePath() != null) {
+			FileManagerService.removeFile(post.getImagePath());
+		}
+		
+		return postDAO.deleteMemo(id, userId);
+	}
+	
+	
+	public int updateMemo(int id, String subject, String content, int userId) {
+		return postDAO.updateMemo(id, subject, content, userId);
+	}
 	
 	
 }

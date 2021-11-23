@@ -14,17 +14,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="/static/css/style.css" type="text/css">
-
+	
 </head>
 
 <body>
 
 	<div id="wrap">
 	
-		<c:import url="/WEB-INF/jsp/include/header.jsp" />
-		
+		<c:import url="/WEB-INF/jsp/include/header.jsp" />	
 		<section class="d-flex justify-content-center">
-			
 			<div class="w-75 my-4">
 				<h1 class="text-center">메모 입력</h1>
 				
@@ -36,17 +34,15 @@
 				<!-- MIME text/html image/jpeg -->
 				<input type="file" accept="image/*" id="fileInput" multiple>
 				<div class="d-flex justify-content-between my-3">
-					<button type="button" class="btn btn-info">목록으로</button>
+					<a href="/post/list_view" class="btn btn-info">목록으로</a>
 					<button type="button" class="btn btn-success" id="saveBtn">저장</button>
 				</div>
 			</div>
 			
 		</section>
-		
 		<c:import url="/WEB-INF/jsp/include/footer.jsp" />
 	
 	</div>
-	
 	
 	
 	<script>
@@ -84,7 +80,8 @@
 					data:formData,
 					success:function(data){
 						if(data.result == "success"){
-							alert("삽입성공");
+							location.href="/post/list_view";
+							
 						}else{
 							alert("삽입실패");
 						}

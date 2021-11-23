@@ -18,17 +18,77 @@
  			, `updatedAt`
  		) VALUES(
  		
- 		#{userId}
- 		, #{subject}
- 		, #{content}
- 		, #{imagePath}
- 		, now()
- 		, now()
+	 		#{userId}
+	 		, #{subject}
+	 		, #{content}
+	 		, #{imagePath}
+	 		, now()
+	 		, now()
  		
  		)
  			
  	</insert>
  
+ 	<select id="selectMemoList" resultType="com.hamsh.memo.post.model.Post"
+ 	parameterType="int">
+ 		SELECT
+ 			`id`
+ 			, `userId`
+ 			, `subject`
+ 			, `content`
+ 			, `imagePath`
+ 			, `createdAt`
+ 			, `updatedAt`
+ 		FROM
+ 			`post`
+ 		WHERE
+ 			`userId` = #{userId}
+ 		ORDER BY `id` DESC
+ 		
  	
+ 	</select>
+ 	
+ 	<select id="selectMemo" resultType="com.hamsh.memo.post.model.Post"
+ 	parameterType="map">
+ 		SELECT
+ 			`id`
+ 			, `userId`
+ 			, `subject`
+ 			, `content`
+ 			, `imagePath`
+ 			, `createdAt`
+ 			, `updatedAt`
+ 		FROM
+ 			`post`
+ 		WHERE
+ 			`id` = #{id}
+ 			AND `userId` = #{userId}
+ 	
+ 	</select>
+ 
+ 	<delete id="deleteMemo" parameterType="int">
+ 	
+ 		DELETE
+ 		FROM
+ 			`post`
+ 		WHERE
+ 			`id` = #{id }
+ 			AND `userId` = #{userId }
+ 	</delete>
+ 	
+ 	<update id="updateMemo" parameterType="map">
+ 		
+ 		UPDATE
+ 			`post`
+ 		SET
+ 			`subject` = #{subject }
+ 			, `content` = #{content }
+ 		WHERE 
+ 			`id` = #{id}
+ 			AND `userId` = #{userId }
+ 	
+ 	</update>
+ 
+ 
  
  </mapper>

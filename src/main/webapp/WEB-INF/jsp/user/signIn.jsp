@@ -32,7 +32,7 @@
 					<input type="password" id="passwordInput" class="form-control mt-3" placeholder="비밀번호를 입력하세요.">
 					<input type="submit"  class="btn btn-info btn-block mt-3" value="로그인">
 				</form>
-				<div class="text-right mt-2">
+				<div class="text-center mt-4">
 					<a href="/user/signup_view">회원가입</a>
 				</div>	
 			</div>
@@ -41,8 +41,8 @@
 		
 		<c:import url="/WEB-INF/jsp/include/footer.jsp" />
 		
-		
 	</div>
+	
 	
 	<script>
 	
@@ -57,12 +57,12 @@
 				var password = $("#passwordInput").val();
 				
 				if(loginId == null || loginId == ""){
-					alert("아이디를 입력하세요.");
+					alert("아이디를 입력해주세요.");
 					return;
 				}
 				
 				if(password == null || password == ""){
-					alert("패스워드를 입력하세요.");
+					alert("비밀번호를 입력해주세요.");
 					return;
 				}
 				
@@ -72,7 +72,7 @@
 					data:{"loginId":loginId, "password":password},
 					success:function(data){
 						if(data.result == "success"){
-							alert("로그인 성공");
+							location.href="/post/list_view";
 							
 						}else{
 							alert("아이디와 비밀번호를 확인해주세요");
