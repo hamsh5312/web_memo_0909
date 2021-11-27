@@ -23,3 +23,9 @@
 
 ### :truck:  포트폴리오 <br>
 [포트폴리오](https://github.com/hamsh5312/web_memo_0909/blob/develop/MemoPortfolio.pdf)
+
+### <b>🛠 설계 🛠</b>
+* UI 기획<br>
+https://ovenapp.io/view/TW9NvSWNJwPUsZEjiw8ljrkGGuMj775n/ZF1GO
+* 데이터 베이스, URL 설계<br>
+https://1drv.ms/x/s!Amrf518RmUGu3QKkUUpKnbPXo7D-
