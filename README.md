@@ -22,4 +22,4 @@
 [메모장](https://www.youtube.com/watch?v=Kx9jVxJ-0FY)
 
 ### :truck:  포트폴리오 <br>
-[포트폴리오](https://github.com/hamsh5312/solution_project/blob/developer/portfolio.pdf)
+[포트폴리오](https://github.com/hamsh5312/web_memo_0909/blob/develop/MemoPortfolio.pdf)
