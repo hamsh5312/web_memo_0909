@@ -28,4 +28,10 @@
 * UI 기획<br>
 https://ovenapp.io/view/TW9NvSWNJwPUsZEjiw8ljrkGGuMj775n/ZF1GO
 * 데이터 베이스, URL 설계<br>
-https://1drv.ms/x/s!Amrf518RmUGu3QKkUUpKnbPXo7D-
+https://1drv.ms/x/s!Amrf518RmUGu3QTg77lp8w0MfJIH
+
+### :hammer_and_pick: 주요기능 :hammer_and_pick:
+* 회원가입, 로그인
+  * package: [https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/java/com/hamsh/memo/user]
+  * view: [https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/webapp/WEB-INF/jsp/user]
+  * 
