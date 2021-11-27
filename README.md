@@ -19,4 +19,4 @@
 * 로그인 기반의 메모장
 
 ### :tv: 메모장 유트브 링크
-[메모장]()
+[메모장](https://www.youtube.com/watch?v=Kx9jVxJ-0FY)
