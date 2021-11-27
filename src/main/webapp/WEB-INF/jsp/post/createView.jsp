@@ -34,7 +34,7 @@
 				<!-- MIME text/html image/jpeg -->
 				<input type="file" accept="image/*" id="fileInput" multiple>
 				<div class="d-flex justify-content-between my-3">
-					<a href="/post/list_view" class="btn btn-info">목록으로</a>
+					<a href="/post/list_view" class="btn btn-info">목록으로!</a>
 					<button type="button" class="btn btn-success" id="saveBtn">저장</button>
 				</div>
 			</div>

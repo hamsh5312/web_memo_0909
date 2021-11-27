@@ -35,7 +35,7 @@
 					<input type="password" id="passwordConfirmInput" class="form-control mt-3" placeholder="비밀번호를 다시입력하세요.">
 					<input type="text" id="nameInput" name="name" class="form-control mt-3" placeholder="이름">
 					<input type="text" id="emailInput" name="email" class="form-control mt-3" placeholder="이메일 주소">
-					<button type="submit" id="signUpBtn" class="btn btn-info btn-block mt-3">회원가입</button>
+					<button type="submit" id="signUpBtn" class="btn btn-info btn-block mt-3">가입</button>
 				</form>
 			</div>
 			

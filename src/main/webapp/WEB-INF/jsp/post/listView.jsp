@@ -30,7 +30,7 @@
 							<table class="table text-center">
 								<thead>
 									<tr>
-										<th>No.</th>
+										<th>넘버</th>
 										<th>제목</th>
 										<th>시간</th>
 									</tr>

@@ -6,7 +6,7 @@
 			<h1 class="ml-3 pt-1">Memo</h1>
 			<c:if test="${not empty userName }" >
 				<div class="text-white mr-3">
-					${userName } 님 <a href="/user/sign_out">[로그아웃] </a>
+					${userName } 님! <a href="/user/sign_out">[로그아웃] </a>
 				</div>
 			</c:if>
 	</header>
