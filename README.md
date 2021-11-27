@@ -36,4 +36,14 @@ https://1drv.ms/x/s!Amrf518RmUGu3QTg77lp8w0MfJIH
   * view: [https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/webapp/WEB-INF/jsp/user]
 * 메모 리스트, 메모 입력, 메모 상세 보기, 메모 수정, 메모 삭제  
   * package: [https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/java/com/hamsh/memo/post]
-  * view: []
+  * view: [https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/webapp/WEB-INF/jsp/post]
+  
+### :pencil2: 외부 라이브러리 라이센스 :pencil2:
+* Tomcat [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+* Mysql [GPLv2 or proprietary](https://www.gnu.org/licenses/gpl-3.0.html)
+* Spring framework [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+* Mybatis [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+* Bootstrap [MIT License](https://opensource.org/licenses/MIT)
+* jQuery [MIT License](https://opensource.org/licenses/MIT)
+* 이미지 출처 : [pixabay](https://pixabay.com/ko/)
+ 
