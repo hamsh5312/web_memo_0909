@@ -18,6 +18,10 @@
 * 메모 리스트에서 메모를 입력하고 이미지를 첨부하여 메모를 작성하고 그 메모를 볼 수 있다.
 * 로그인 기반의 메모장
 
+### :family: 관련 프로젝트
+[SNS 프로젝트](https://github.com/hamsh5312/snsProject) <br>
+[고해 프로젝트](https://github.com/hamsh5312/solution_project) 
+
 ### :tv: 메모장 유트브 링크
 [메모장](https://www.youtube.com/watch?v=Kx9jVxJ-0FY)
 
