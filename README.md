@@ -36,11 +36,11 @@ https://1drv.ms/x/s!Amrf518RmUGu3QTg77lp8w0MfJIH
 
 ### :hammer_and_pick: 주요기능 :hammer_and_pick:
 * 회원가입, 로그인
-  * package: [https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/java/com/hamsh/memo/user]
-  * view: [https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/webapp/WEB-INF/jsp/user]
+  * package: [com.hamsh.memo.user.*](https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/java/com/hamsh/memo/user)
+  * view: [/webapp/WEB-INF/jsp/user/*](https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/webapp/WEB-INF/jsp/user)
 * 메모 리스트, 메모 입력, 메모 상세 보기, 메모 수정, 메모 삭제  
-  * package: [https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/java/com/hamsh/memo/post]
-  * view: [https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/webapp/WEB-INF/jsp/post]
+  * package: [com.hamsh.memo.post.*](https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/java/com/hamsh/memo/post)
+  * view: [/webapp/WEB-INF/jsp/post/*](https://github.com/hamsh5312/web_memo_0909/tree/develop/src/main/webapp/WEB-INF/jsp/post)
   
 ### :pencil2: 외부 라이브러리 라이센스 :pencil2:
 * Tomcat [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
